@@ -1,0 +1,43 @@
+
+.mainContentContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mainContentItem {
+  margin: 25px;
+  font-size: 22px;
+  font-style: italic;
+  font-family: sans-serif;
+}
+
+
+.mainImage {
+  height: auto;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.textContent {
+  max-width: 50%;
+}
+
+h3 {
+  text-align: center;
+  font-weight: bold;
+}
+
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+}
+
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+
+
+}
