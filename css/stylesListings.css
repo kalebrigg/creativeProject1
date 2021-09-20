@@ -1,30 +1,25 @@
 .fullscreen-container {
   height: 50vh;
   width: 100vw;
+  margin-bottom: 20px;
+
+}
+
+footer {
+  margin-top: 25px;
 }
 
 .card {
   border: none!important;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  margin-top: 30px;
 }
 
-.top {
-  padding-top: 125px;
-}
+.single-card {
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 
-.bottom {
-  padding-bottom: 100px;
-}
-
-.left {
-  padding-left: 175px;
-  padding-right: 85px;
-}
-
-.right {
-  padding-left: 85px;
-  padding-right: 175px;
 }
 
 .card-container a {
@@ -35,7 +30,7 @@
 }
 
 .card-image {
-  max-height: 30vh;
+  max-height: 65vh;
 }
 
 .card-container h5 {
@@ -46,10 +41,11 @@
 .card-first-line {
   margin-top: 10px;
   width:100%;
-  font-size: 28px;
+  font-size: 15px;
 }
 
 .card-second-line {
+  font-size: 13px;
 }
 
 .button {
@@ -60,9 +56,9 @@
   color: black;
   text-align: center;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 13px;
   padding-left: 5px;
-  width: auto;
+  width: 50%;
   padding-right: 5px;
   margin-top: 5px;
 }
@@ -83,13 +79,13 @@
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-auto-rows: auto;
   justify-content: center;
 }
 
 /* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 1300px) {
+@media only screen and (min-width: 500px) and (max-width: 799px) {
 
   .card-container {
     display: grid;
@@ -105,36 +101,103 @@
 
   .card {
     border: none!important;
-    padding-top: 50px;
-    padding-bottom:50px;
   }
 
-  .top {
-    padding-top: 50px;
-  }
 
-  .bottom {
-    padding-bottom: 50px;
-  }
-
-  .left {
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-
-  .right {
-    padding-left: 100px;
-    padding-right: 100px;
+  .single-card {
+    padding: 35px;
   }
 
   .button {
+    width: 45%;
+    font-size: 19px;
+  }
+
+  .card-first-line {
+    margin-top: 10px;
+    width:100%;
+    font-size: 24px;
+  }
+
+  .card-second-line {
+    font-size: 20px;
+  }
+
+  .card-image {
+    max-height: 65vh;
   }
 
 }
 
+@media only screen and (min-width:800px) and (max-width: 1124px)
+{
+  .fullscreen-container {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .card {
+    border: none!important;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .top {
+    padding-top: 100px;
+  }
+
+  .bottom {
+    padding-bottom: 80px;
+  }
+
+  .left {
+    padding-left: 75px;
+    padding-right: 35px;
+  }
+
+  .right {
+    padding-left: 35px;
+    padding-right: 75px;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    justify-content: center;
+  }
+
+  .card-image {
+    max-height: 75vh;
+  }
+
+  .button {
+    width: 50%;
+    font-size: 16px;
+  }
+
+  .single-card {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+  }
+
+  .card-first-line {
+    margin-top: 10px;
+    width:100%;
+    font-size: 18px;
+  }
+
+  .card-second-line {
+    font-size: 16px;
+  }
+}
+
 
 /* Desktop Styles */
-@media only screen and (min-width: 1301px) {
+@media only screen and (min-width: 1125px) {
 
   .fullscreen-container {
     height: 100vh;
@@ -148,21 +211,21 @@
   }
 
   .top {
-    padding-top: 125px;
+    padding-top: 100px;
   }
 
   .bottom {
-    padding-bottom: 100px;
+    padding-bottom: 80px;
   }
 
   .left {
-    padding-left: 175px;
-    padding-right: 85px;
+    padding-left: 75px;
+    padding-right: 35px;
   }
 
   .right {
-    padding-left: 85px;
-    padding-right: 175px;
+    padding-left: 35px;
+    padding-right: 75px;
   }
 
   .card-container {
@@ -173,10 +236,30 @@
   }
 
   .card-image {
-    max-height: 50vh;
+    max-height: 75vh;
   }
 
   .button {
+    width: 40%;
+    font-size: 24px;
+  }
 
+  .single-card {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+  }
+
+
+  .card-first-line {
+    margin-top: 10px;
+    width:100%;
+    font-size: 28px;
+  }
+
+  .card-second-line {
+    font-size: 24px;
   }
 }
