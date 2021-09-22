@@ -30,7 +30,8 @@ footer {
 }
 
 .card-image {
-  max-height: 50%;
+  max-height: 100%;
+  width: 100%; 
 }
 
 .card-container h5 {
