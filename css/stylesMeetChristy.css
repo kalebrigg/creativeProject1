@@ -33,6 +33,16 @@
 h3 {
   text-align: center;
   font-weight: bold;
+
+}
+
+.fullscreen-container video {
+  display:none;
+}
+
+.mobileMainContent {
+  position: absolute;
+  z-index: -1;
 }
 
 
@@ -62,7 +72,7 @@ h3 {
     height: auto;
     object-fit: cover;
     overflow: hidden;
-    max-height: 60vh;
+    max-height: 80vh;
     object-position: top;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -78,6 +88,16 @@ h3 {
     text-align: center;
     font-weight: bold;
   }
+
+  .fullscreen-container video {
+    display:block;
+  }
+
+  .mobileMainContent {
+    display: none;
+  }
+
+
 }
 
 
@@ -123,6 +143,14 @@ h3 {
   h3 {
     text-align: center;
     font-weight: bold;
+  }
+
+  .fullscreen-container video {
+    display:block;
+  }
+
+  .mobileMainContent {
+    display: none;
   }
 
 }

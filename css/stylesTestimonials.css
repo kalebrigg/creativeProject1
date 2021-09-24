@@ -21,7 +21,18 @@
 h5 {
   text-align: center;
 }
+.fullscreen-container video {
+  display:none;
+}
 
+.mobileMainContent {
+  position: absolute;
+  z-index: -1;
+}
+
+h2 {
+  margin: 15px;
+}
 
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
@@ -39,6 +50,14 @@ h5 {
     grid-template-columns: repeat(1, 1fr);
     grid-auto-rows: auto;
   }
+
+  .fullscreen-container video {
+    display:block;
+  }
+
+  .mobileMainContent {
+    display: none;
+  }
 }
 
 
@@ -48,6 +67,16 @@ h5 {
     height: 100vh;
     width: 100vw;
   }
+
+  .fullscreen-container video {
+    display:block;
+  }
+
+  .mobileMainContent {
+    display: none;
+  }
+
+
 
   .card {
     padding: 100px;

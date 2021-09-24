@@ -14,7 +14,7 @@ body {
 }
 
 .bg-light {
-  background-color: rgba(0, 0, 0, 0.3)!important;
+  background-color: rgba(0, 0, 0,  0.5)!important;
 }
 
 .navbar-brand   {
@@ -61,6 +61,8 @@ li {
   z-index: -1;
 }
 
+
+
 .main-content {
   color: white;
   text-align: center;
@@ -71,6 +73,7 @@ li {
 
 .main-header {
   font-size: 40px;
+  margin: 15px;
 }
 
 .secondary-header {
@@ -140,6 +143,17 @@ footer{
   color: black;
 }
 
+.logoImage {
+  width: 125px;
+  height: 125px;
+  margin: 15px;
+  object-fit: cover;
+}
+
+.brandLogo {
+   width: 35px;
+   height: 35px;
+}
 
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
@@ -186,6 +200,21 @@ footer{
   li {
     font-size: 1.5em;
   }
+
+  .logoImage {
+    width: 150px;
+    height: 150px;
+  }
+
+  .brandLogo {
+     width: 65px;
+     height: 65px;
+  }
+
+  .main-header {
+    margin: 15px;
+  }
+
 }
 
 
@@ -193,6 +222,16 @@ footer{
 @media only screen and (min-width: 961px) {
     .footer-menu-item a {
       font-size:20px;
+    }
+
+    .logoImage {
+      width: 350px;
+      height: 350px;
+    }
+
+    .brandLogo {
+       width: 65px;
+       height: 65px;
     }
 
     .main-header {
@@ -241,5 +280,7 @@ footer{
     li {
       font-size: 1.5em;
     }
+
+
 
   }
