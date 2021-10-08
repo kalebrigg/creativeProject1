@@ -1,4 +1,4 @@
-var token = 'AQAmvkY0yCjLqvHOkl_j83wuO7v0AM3z1xATS2yKlEZZ7kMSs16n3FG3PhtONec1YCo-gSJn0Xht5DoIIlI9moEf8t66IWb713mEagc3gscsk6AEjfbItPPfbVUVzDMkBzHWJolNXDrhVDwlfOpMuiVfxAls2EFTHHpWhBWqg2QxlEVzDIrSHpPMN17eeOigOr3XXrwT2PdKbfYtubb9yUpRQLWnrWPa8iFPwl7TZLWfrA',
+var token = 'AQCNIUbjn-af8Btf2PrpzGPovm3fAP5P9T8cmHLKrRT3ePJH8wIl5YSxtBkKW7DmIwai9iBge1xodn645Op3aKnn8SMTPhBHPuI74mM4ptBqeNExRe25YNIRJGVfJF75D-uC2kS6Jq9lVKUYd1yP5BKcyOO5-fF4dQlSoP12T6zucUES5xfl44-9ng9J0gdfXRPpraYkvkr7spPNK2N0U90tIGb3OJNZBY2gGfO_atPCWg',
     container2 = document.getElementById( 'rudr_userinfo' ),
     scrElement2 = document.createElement( 'script' );
 
