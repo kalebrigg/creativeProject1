@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+
+#map {
+  height: 100%;
+}
+
 body {
   font-family: serif;
 }
