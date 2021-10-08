@@ -66,6 +66,11 @@
 
 </div>
 
+
+<div id="instafeed" class="instagram-gallery-medium"></div>
+
+
+
       <footer>
         <div class="footerContainer">
           <div class="footerItem">
@@ -88,10 +93,32 @@
         </div>
       </footer>
 
+
+
+  <script text="type/javascript" src="javascript/javascript.js"></script>
   <script src="https://kit.fontawesome.com/078d68d4a9.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <!-- BEGIN - FC Instagram - Script -->
+    <script src="javascript/FCInstagram.js"></script>
+    <script>
+    jQuery.fn.FCInstagram.accessData = {
+        accessToken: "AQAmvkY0yCjLqvHOkl_j83wuO7v0AM3z1xATS2yKlEZZ7kMSs16n3FG3PhtONec1YCo-gSJn0Xht5DoIIlI9moEf8t66IWb713mEagc3gscsk6AEjfbItPPfbVUVzDMkBzHWJolNXDrhVDwlfOpMuiVfxAls2EFTHHpWhBWqg2QxlEVzDIrSHpPMN17eeOigOr3XXrwT2PdKbfYtubb9yUpRQLWnrWPa8iFPwl7TZLWfrA", // Token
+    };
+    $('#instafeed').FCInstagram({
+        max: 9, // A number between 1 and 25 of photos to show. Default: 9
+        autoplay: true, // Set autoplay video: true/false. Default: false
+        complete: function () { // A callback function to execute after the display of the photos.
+            console.log('completed');
+        }
+    });
+    </script>
+<!-- END - FC Instagram - Script -->
+
+
 </body>
 
 
