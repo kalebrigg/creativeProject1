@@ -28,7 +28,7 @@ MODAL SECTION ------------------------------------------------------------------
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-direction: row;
   height:auto;/* Could be more or less, depending on screen size */
@@ -70,7 +70,7 @@ MODAL SECTION ------------------------------------------------------------------
 }
 
 .textBox {
-  width: 100%;
+  max-width: 100%;
   margin:0;
   padding:10px;
 }
@@ -88,10 +88,10 @@ MODAL SECTION ------------------------------------------------------------------
 
 #leftSideForm{
   width: 50%;
+  display: none;
 }
 
 #rightSideForm{
-  margin-left: 50px;
   width: auto;
   justify-content: center;
 }
@@ -289,15 +289,7 @@ footer{
     font-size:25px;
   }
 
-  #leftSideForm {
-    display: none;
-  }
 
-  #rightSideForm {
-    margin-left: 50px;
-    width: auto;
-    margin-right: 50px;
-  }
 
   .fullscreen-container {
     position: relative;
@@ -424,15 +416,6 @@ footer{
     width: 100%;
   }
 
-  #leftSideForm{
-    width: 50%;
-  }
-
-  #rightSideForm{
-    margin-left: 50px;
-    width: auto;
-    justify-content: center;
-  }
 
   .rightSideTop {
     display: flex;
@@ -456,6 +439,17 @@ footer{
     margin-left: 25px;
     width:auto;
 
+  }
+
+  #leftSideForm {
+    display: none;
+  }
+
+  #rightSideForm {
+    margin-left: 50px;
+    width: auto;
+    margin-right: 50px;
+    justify-content: center;
   }
 
 }
@@ -604,6 +598,7 @@ footer{
 
 #leftSideForm{
   width: 50%;
+  display: block;
 }
 
 #rightSideForm{
