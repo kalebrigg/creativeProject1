@@ -27,3 +27,46 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+function validateForm() {
+  var contactName = document.getElementById("contactName").value;
+  var contactEmail = document.getElementById("contactEmail").value;
+  var contactNumber = document.getElementById("contactNumber").value;
+  var contactMessage = document.getElementById("contactMessage").value;
+
+  if (contactName === "" || contactEmail === "" || contactNumber === "" || contactMessage === "" )
+  {
+    return;
+  }
+  else {
+    sendEmail();
+  }
+}
+
+function sendEmail() {
+  console.log("about to send");
+  var contactName = document.getElementById("contactName").value;
+  var contactEmail = document.getElementById("contactEmail").value;
+  var contactNumber = document.getElementById("contactNumber").value;
+  var contactMessage = document.getElementById("contactMessage").value;
+
+	Email.send({
+	Host: "smtp.gmail.com",
+	Username : "christyriggrealtorwebsite@gmail.com",
+	Password : "Christyrigg232323",
+	To : 'kaleb2323rigg@gmail.com',
+	From : "christyriggrealtor@gmail.com",
+	Subject : "New Contact Request - Web",
+	Body : "Christy somebody wants you to contact them!<br>"
+            + "Name: " + contactName + "<br>"
+            + "Email: " + contactEmail + "<br>"
+            + "Phone Number: " + contactNumber + "<br>"
+            + "Message: " + contactMessage + "<br>",
+	}).then(
+		displayEmailSent();
+	);
+}
+
+function emailSent() {
+  
+}
