@@ -10,6 +10,7 @@ var btn = document.getElementById("myBtn");
 // When the user clicks on the button, open the modal
 btn.onclick = function() {
   modal.style.display = "block";
+
 }
 
 // When the user clicks on <span> (x), close the modal
@@ -50,6 +51,7 @@ function sendEmail() {
   var contactNumber = document.getElementById("contactNumber").value;
   var contactMessage = document.getElementById("contactMessage").value;
 
+
 	Email.send({
 	Host: "smtp.gmail.com",
 	Username : "christyriggrealtorwebsite@gmail.com",
@@ -63,10 +65,18 @@ function sendEmail() {
             + "Phone Number: " + contactNumber + "<br>"
             + "Message: " + contactMessage + "<br>",
 	}).then(
-		displayEmailSent();
+		displayEmailSent()
 	);
 }
 
-function emailSent() {
-  
+var popup = document.getElementById("emailSuccessContainer");
+
+function displayEmailSent() {
+  popup.style.display = "block";
+}
+
+window.onclick = function(event) {
+  if (event.target == popup) {
+    popup.style.display = "none";
+  }
 }
