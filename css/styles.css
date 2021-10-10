@@ -124,7 +124,7 @@ MODAL SECTION ------------------------------------------------------------------
 
 /* The Modal (background) */
 #emailSuccessContainer {
-  display: block; /* Hidden by default */
+  display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 3; /* Sit on top */
   left: 0;
